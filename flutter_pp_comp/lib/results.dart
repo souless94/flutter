@@ -30,11 +30,14 @@ class Result extends StatelessWidget {
                         minWidth: 250.0,
                         height: 75.0,
                         child: RaisedButton(
-                          color: Colors.lime,
+                            color: Colors.lime,
                             onPressed: () {
                               Navigator.pop(context);
                             },
-                            child: Text("Back to HomePage",style: TextStyle(fontSize: 30),)))
+                            child: Text(
+                              "Back to HomePage",
+                              style: TextStyle(fontSize: 30),
+                            )))
                   ]))
             ])));
   }
