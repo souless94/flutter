@@ -64,7 +64,7 @@ class QuizState extends State<Quiz> {
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     AutoSizeText(currentQuestion.theQuestion,
-                        minFontSize: 30, textAlign: TextAlign.center),
+                        minFontSize: 48, textAlign: TextAlign.center),
                     SizedBox(height: 30),
                     Column(
                       children: currentQuestion
@@ -122,7 +122,8 @@ class QuizState extends State<Quiz> {
                         onPressed: () {
                           Navigator.pop(context);
                         },
-                        child: Text("This Quiz is too Hard! Get me Out"))
+                        child: Text("This Quiz is too Hard! Get me Out")),
+                        SizedBox(height: 30)
                   ])
             ]))));
   }
