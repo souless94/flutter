@@ -50,17 +50,17 @@ class QuizState extends State<Quiz> {
             appBar: AppBar(
               title: Text("Score : $score/5"),
             ),
-            body: Center ( child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                mainAxisSize: MainAxisSize.max,
-                children: [
+            body: Center(
+                child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    mainAxisSize: MainAxisSize.max,
+                    children: [
                   Text(
                     currentQuestion.theQuestion,
                     style: TextStyle(fontSize: 48),
                   ),
                   SizedBox(height: 30),
                   Column(
-
                     children: currentQuestion
                         .getTheList()
                         .map(
@@ -72,10 +72,8 @@ class QuizState extends State<Quiz> {
                                     ButtonTheme(
                                         minWidth: 250.0,
                                         height: 75.0,
-                                        
                                         child: RaisedButton(
-                                          color:  Colors.teal[200],
-                                          
+                                            color: Colors.teal[200],
                                             onPressed: () {
                                               if (index == 4) {
                                                 bool isCorrect = currentQuestion
@@ -102,18 +100,22 @@ class QuizState extends State<Quiz> {
                                                     questionlist[index];
                                               });
                                             },
-                                            child: Text(element,style: TextStyle(fontSize: 30),)))
+                                            child: Text(
+                                              element,
+                                              style: TextStyle(fontSize: 30),
+                                            )))
                                   ],
                                 ),
                               )),
                         )
                         .toList(),
-                  ),SizedBox(height: 20),
+                  ),
+                  SizedBox(height: 20),
                   RaisedButton(
                       onPressed: () {
                         Navigator.pop(context);
                       },
-                      child: Text("This Quiz is too Hard Get me Out"))
+                      child: Text("This Quiz is too Hard! Get me Out"))
                 ]))));
   }
 }

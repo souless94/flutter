@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
 
         home: Scaffold(
             appBar: AppBar(
-              title: Text("Flutter Quiz"),
+              title: Center(child:Text("Flutter Quiz")),
             ),
             body: ListView(children: [
               Image.asset("assets/flutter.jpeg",height: 300,),
