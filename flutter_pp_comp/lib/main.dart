@@ -23,12 +23,15 @@ class MyApp extends StatelessWidget {
                     onPressed: () => launch("https://flutter.dev/"),
                   ))),
                   ListTile(title: Text("Home", style: TextStyle(fontSize: 24))),
+                  
                   ListTile(
                       title:
                           Text("LeaderBoard", style: TextStyle(fontSize: 24))),
                   ListTile(title: Text("Help", style: TextStyle(fontSize: 24)), onTap:() => launch("https://flutter.dev/docs") ,),
                   ListTile(
-                      title: Text("Settings", style: TextStyle(fontSize: 24)))
+                      title: Text("Settings", style: TextStyle(fontSize: 24))),
+                      ListTile(
+                      title: Text("Community", style: TextStyle(fontSize: 24)), onTap:() => launch("https://flutter.dev/community"),)
                 ],
               ),
             ),
