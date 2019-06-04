@@ -7,6 +7,9 @@ Have different difficulty modes : Easy, Medium, Hard.
 
 ## Contributors
 Chia Wen Kai
+
 Daniel Koh
+
 Ong Yong Zheng
+
 William Goh
